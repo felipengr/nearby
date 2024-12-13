@@ -10,6 +10,7 @@ import {
     Rubik_600SemiBold,
     Rubik_700Bold
 } from "@expo-google-fonts/rubik"
+import { StatusBar } from "react-native"
 
 export default function Layout() {
     const [fontsLoaded] = useFonts({
@@ -25,6 +26,7 @@ export default function Layout() {
 
     return (
         <GestureHandlerRootView style={{ flex: 1 }}>
+            <StatusBar barStyle='light-content' /> 
             <Stack
                 screenOptions={{
                     headerShown: false,
